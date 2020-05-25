@@ -1,0 +1,9 @@
+{
+    "http": {
+        "port": 9980
+    },
+    "redis": "r-j6c2967vmqiu0sxkii.redis.rds.aliyuncs.com:6379",
+    "logger": {
+        "level": "error"
+    }
+}

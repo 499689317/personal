@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格与表单</title>
+	<link rel="stylesheet" type="text/css" href="css/other/table.css">
+</head>
+<body>
+	<article>
+		<section class="consection">
+			<fieldset>
+				<legend>表格设计</legend>
+				<ul>
+					<li>table标记，设置表格</li>
+					<li>tr标记，设置行数</li>
+					<li>td标记，设置列数</li>
+					<li>caption标记，设置表格标题</li>
+					<li>th标记，设置列标题，与td标记功能相同，但是会将标识的单元格文字加粗</li>
+				</ul>
+				<legend>合并单元格</legend>
+				<ul>
+					<li>td rowspan属性合并上下行单元格</li>
+					<li>td colspan属性合并左右列单元格</li>
+				</ul>
+			</fieldset>
+			<table id="table1">
+				<caption>季度售量统计表</caption>
+				<tr>
+					<th>季别</th>
+					<th>产品名称</th>
+					<th>价格</th>
+					<th>销售量</th>
+				</tr>
+				<tr>
+					<td>季度1</td>
+					<td>电视</td>
+					<td>18888</td>
+					<td>100台</td>
+				</tr>
+				<tr>
+					<td>季度2</td>
+					<td nowrap>冰箱</td>
+					<td>20000</td>
+					<td>200台</td>
+				</tr>
+			</table>
+			<table id="table2">
+				<caption>合并表格单元格</caption>
+				<tr>
+					<td rowspan="3">合并3行</td>
+					<td colspan="3">合并3列</td>
+				</tr>
+				<tr>
+					<td>列1</td>
+					<td>列2</td>
+					<td>列3</td>
+					<td>列4</td>
+				</tr>
+				<tr>
+					<td>列1</td>
+					<td>列2</td>
+					<td>列3</td>
+					<td>列4</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>列2</td>
+					<td>列3</td>
+					<td>列4</td>
+				</tr>
+			</table>
+		</section>
+		<section class="consection">
+			<fieldset>
+				<legend>表单设计</legend>
+				<ul>
+					<!-- type=date，number，color，range，search不确定ie是否支持 -->
+					<li>表单文字组件，包括（文本）text，（多行文本）textarea，（密码）password</li>
+					<li>表单列表组件，包括（下拉选择）select，（数据列表）datalist</li>
+					<li>表单选择组件，包括（单选按钮）radio，（复选框）checkbox</li>
+					<li>表单按钮组件，包括（提交）submit，（按钮）botton，（重置）reset</li>
+				</ul>
+			</fieldset>
+			<form id="form1" action="">
+				<fieldset>
+					<legend>表单文字组件</legend>
+					<ol>
+						<li>账号：<input type="text"></li>
+						<li>密码：<input type="password"></li>
+						<li>日期：<input type="date"></li>
+						<li>数字：<input type="number"></li>
+						<li>颜色：<input type="color"></li>
+						<li>范围：<input type="range"></li>
+						<li>搜索：<input type="search"></li>
+					</ol>
+					<legend>表单列表组件</legend>
+					<ul>
+						<li>
+							<select name="sport" id="" size="">
+								<option value="">游戏</option>
+								<option value="">跑步</option>
+								<option value="">单车</option>
+								<option value="">篮球</option>
+							</select>
+						</li>
+						<li>
+							<!-- datalist 不确定ie是否支持 datalist要与input组件list属性一起使用，list属性值与datalist的id值一样就可以取得option列表 -->
+							<input type="text" list="browsers">
+							<datalist id="browsers">
+								<option value="IE"></option>
+								<option value="FireFox"></option>
+								<option value="Chrome"></option>
+								<option value="Opera"></option>
+								<option value="Safari"></option>
+							</datalist>
+						</li>
+					</ul>
+					<legend>表单选择组件</legend>
+					<ul>
+						<li>
+							男：<input type="radio" name="gender" value="男" checked>
+							女：<input type="radio" name="gender" value="女">
+						</li>
+						<li>
+							<input type="checkbox" name="nutil" value="运动" checked>运动
+							<input type="checkbox" name="nutil" value="上网">上网
+							<input type="checkbox" name="nutil" value="看电影">看电影
+							<input type="checkbox" name="nutil" value="唱歌">唱歌
+							<input type="checkbox" name="nutil" value="喝酒">喝酒
+						</li>
+					</ul>
+					<legend>表单按钮组件</legend>
+					<ol>
+						<li><input type="submit" name="s1" value="submit"></li>
+						<li><input type="button" name="s2" value="button"></li>
+						<li><input type="reset" name="s3" value="reset"></li>
+					</ol>
+				</fieldset>
+			</form>
+		</section>
+	</article>
+</body>
+</html>

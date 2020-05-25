@@ -1,0 +1,165 @@
+
+/*网页整体布局*/
+
+body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	font-family: Arial;
+	/*设置鼠标样式*/
+	cursor: url(../../resource/travel/c.cur) auto;
+	background-image: url(../../resource/travel/b.jpg);
+	background-attachment: fixed;
+}
+
+#main {
+	margin: auto;
+	/*margin: 0px;*/
+	border: 0px solid;
+	padding: 0px;
+	width: 800px;
+}
+
+header {
+	border: 1px #330000 solid;
+	width: 800px;
+	height: 80px;
+	background: red;
+}
+
+h1#text1 {
+	margin: 0px;
+	/*margin-left: 50px;*/
+	padding: 0px;
+	padding-left: 50px;
+	/*position定位与top-right-bottom-left的关系*/
+	/*position属性一般与div标记搭配使用，用于组件的精确定位*/
+	position: absolute;
+	top: 15px;
+
+	font-size: 40px;
+	color: blue;
+}
+
+h1#text2 {
+	margin: 0px;
+	/*margin-left: 150px;*/
+	padding: 0px;
+	padding-left: 150px;
+	
+	position: absolute;
+	top: 30px;
+
+	font-size: 30px;
+	color: #FFFFFF;
+	
+	z-index: 1;
+	filter: blur(1px);
+	text-shadow: 5px 5px 5px #00ff00;
+}
+
+aside {
+	/*导航栏靠左显示*/
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	width: 170px;
+	height: 400px;
+	/*加入背景图片*/
+	/*background: url("../res/p.png") no-repeat;*/
+	background: yellow;
+}
+
+aside div img {
+	border: 1px solid;
+	width: 170px;
+	height: 170px;
+}
+
+nav {
+	margin: 0px;
+	/*margin-top: 10px;*/
+	border: 0px #000000 solid;
+	padding: 0px;
+	padding-top: 10px;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+	/*取消列表符号*/
+	list-style: none;
+}
+
+nav li a {
+	display: block;
+	width: 170px;
+	height: 42px;
+	/*默认链接背景图片*/
+	background-image: url(../../resource/travel/c.png);
+	background-repeat: no-repeat;
+
+	line-height: 35px;
+	text-indent: 45px;
+	/*去掉下划线*/
+	text-decoration: none;
+	
+	font-size: 15px;
+	color: #333333;
+}
+
+nav li a:hover {
+	/*鼠标移到链接背景图片*/
+	background: url(../../resource/travel/p.png) no-repeat;
+	color: #ffffff;
+}
+
+article {
+	margin: 0px 0px 0px 170px;
+	/*margin-left: 170px;*/
+	border-right: 1px #330000 solid;
+	width: 630px;
+	height: 400px;
+	background: #FFFFFF;
+}
+
+.consection {
+	margin: auto;
+	border: 0px #330000 solid;
+	padding: 20px;
+	/*display设置区块模式，可设置block与inline两种值*/
+	/*block模式：区块大小固定，当文字超出区块会换行*/
+	/*inline模式：区块大小随内容改变，当文字超出区块时区块会延伸*/
+	display: block;
+	width: 400px;
+}
+
+fieldset {
+	border: 1px solid;
+	/*border边框设置圆角*/
+	border-radius: 10px;
+}
+
+fieldset legend {
+	/*设置标题居中*/
+	text-align: center;
+}
+
+div a img {
+	/*设置元素间隔*/
+	margin: 3px;
+	border: 1px solid;
+	/*padding: 3px;*/
+	border-radius: 15px;
+}
+
+footer {
+	border: 1px #330000 solid;
+	background: #330000;
+	width: 800px;
+	height: 50px;
+	color: #FFFFFF;
+	/*文字居中*/
+	text-align: center;
+	line-height: 50px;
+}

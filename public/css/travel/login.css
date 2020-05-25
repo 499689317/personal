@@ -1,0 +1,24 @@
+body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+
+	background-color: pink;
+}
+
+#login {
+	margin: auto;
+	border: 1px solid gray;
+	padding: 400px;
+	width: 800px;
+}
+
+#login_btn {
+	border: 0px solid;
+	position: relative;
+	left: 25px;
+}
+
+.goto_login {
+	text-align: center;
+}

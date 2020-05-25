@@ -1,0 +1,31 @@
+
+body {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+	font-family: Arial;
+	font-size: 10px;
+	background-color: pink;
+}
+
+#main {
+	margin: auto;
+	border: 0px solid;
+	padding: 0px;
+	width: 800px;
+}
+
+.textstyles {
+	margin: auto;
+	border: 1px red solid;
+	padding: 20px;
+	display: block;
+}
+
+fieldset {
+	text-align: left;
+}
+
+legend {
+	text-align: center;
+}

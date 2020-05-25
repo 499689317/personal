@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>会员登陆</title>
+	<link rel="stylesheet" href="/css/travel/login.css">
+	<script src="/javascript/lib/EventUtil.js"></script>
+	<script src="/javascript/travel/utils.js"></script>
+	<script src="/javascript/travel/user.js"></script>
+</head>
+<body>
+	<div id="login">
+		<form id="login_submit" class="goto_login" action="user/login" onsubmit="return User.verify_login(this)" method="post">
+			账号：<input type="text" name="username"><br>
+			密码：<input type="password" name="password"><br>
+			<div id="login_btn">
+				<input type="reset" name="l" value="重新输入">
+				<input type="submit" name="s" value="立即登陆">
+			</div>
+		</form>
+		<div class="goto_login">
+			<p><strong>未注册账号</strong><a href="register.html">去注册</a></p>
+		</div>
+	</div>
+</body>
+</html>

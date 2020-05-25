@@ -1,0 +1,118 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网页设计</title>
+
+	<style text/css>
+
+		a[href] {
+			background-color: yellow;
+		}
+		
+		a[target] {
+			background: red;
+		}
+
+		a {
+			border: 1px red solid;
+			cursor: pointer auto;
+		}
+		a:link {
+			color: black;
+		}
+		a:visited {
+			color: blue;
+			border: 0px;
+		}
+		a:active {
+			color: yellow;
+		}
+		a:hover {
+			border: 1px green solid;
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+<body>
+
+	<a href="text.html">跳转到文字排版</a><br>
+	<a href="table.html">跳转到表格表单</a><br>
+	<a href="index.html">刷新</a><br>
+	<a href="http://www.google.com" target="_blank">去google</a><br>
+	<a href="mailto:mdh_1991@sina.com?subject=有什么问题">联系作者</a><br>
+	<a href="res/p.png"><img src="res/p.png" alt="ex"></a>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人网站</title>
+	<link rel="stylesheet" type="text/css" href="css/other/color.css">
+</head>
+<body>
+
+	<div id="main">
+		
+		<!-- 标题区 -->
+		<header>
+			<h1 id="text1">我的个人网站</h1>
+			<h1 id="text2">我的个人网站</h1>
+		</header>
+
+		<!-- 左侧菜单区 -->
+		<aside>
+			<div>
+				<img src="resource/travel/h.png" alt="h">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="text.html">最新消息</a></li>
+					<li><a href="table.html">flash动画</a></li>
+					<li><a href="table.html">短片欣赏</a></li>
+					<li><a href="table.html">音乐欣赏</a></li>
+					<li><a href="text.html">留言板</a></li>
+				</ul>
+			</nav>
+		</aside>
+
+		<!-- 主内容区 -->
+		<article>
+			<!-- 主点突出的内容用语义标记 -->
+			<section class="consection">
+				<fieldset>
+					<legend>最新消息</legend>
+					“宠物认养活动”开始了<br>
+					即日起到10月4日止<br>
+					领养条件:<br>
+					<ul>
+						<li>有爱心，有耐心</li>
+						<li>认养人未满18岁，需要家长同意</li>
+						<li>有合适的饲养环境</li>
+					</ul>
+					领养电话：11111111 <br>
+				</fieldset>
+			</section>
+
+			<!-- 无意义内容避免使用语义标记 -->
+			<div class="consection">
+				<a href="resource/travel/1.jpg"><img src="resource/travel/1.jpg" alt="img1" width="120"></a>
+				<a href="resource/travel/2.jpg"><img src="resource/travel/2.jpg" alt="img2" width="120"></a>
+				<a href="resource/travel/3.jpg"><img src="resource/travel/3.jpg" alt="img3" width="120"></a>
+			</div>
+		</article>
+
+		<!-- 脚页区 -->
+		<footer>
+			欢迎光临我的网站
+		</footer>
+
+	</div>
+	
+</body>
+</html>

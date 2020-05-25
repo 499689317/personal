@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>
+		{{ if(tips.title) { }}
+		{{= tips.title }}
+		{{ } else { }}
+		{{= "Error" }}
+		{{ } }}
+	</title>
+	<style>
+		body {
+			margin: 0px;
+			border: 0px;
+			padding: 0px;
+			background-color: gray;
+		}
+		#content {
+			margin: auto;
+			border: 0px solid red;
+			padding: 100px;
+			width: 250px;
+		}
+		
+		p.s1 {
+			border: 0px solid yellow;
+			text-align: center;
+		}
+
+		a.s2 {
+			margin: 90px;
+			border: 0px solid blue;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="content">
+		{{ if(tips.content) { }}
+		<p class="s1">{{= tips.content }}</p>
+		{{ } else { }}
+		<p class="s1">{{= "未知错误" }}</p>
+		{{ } }}
+		<a class="s2" href="/index.html" type="text/html">返回首页</a>
+	</div>
+</body>
+</html>
